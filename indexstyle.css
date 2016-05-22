@@ -1,12 +1,39 @@
 body {
-	font-family: ArchivoNarrowRegular;
+	font-family: Oswald;
 	font-weight: normal;
 	font-style: normal;
 	background-color:#BFD7B5;
 	margin-left: 14px;
 	margin-right: 14px;
-	min-width: 750px;
 }
+
+a:link {
+	color: black;
+}
+
+a:visited {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover { 
+	text-decoration: none;
+	color: #30C5FF;
+}
+
+a:active {
+	text-decoration: none;
+	color: black;
+}
+
+#wrap {
+	width: 900px;
+	margin: 0 auto;
+}
+
+
+/*----------------------------------------*/
+
 
 h1.title {
 	background-color:#E7EFC5; 
@@ -17,6 +44,8 @@ h1.title {
 	text-align:center;
 	font-size: 50px;
 	font-weight: normal;
+	padding-top: 14px;
+	padding-bottom: 14px;
 }
 
 img.picture_of_me {
@@ -28,23 +57,16 @@ img.picture_of_me {
 	display: block; 
 	margin-left: auto; 
 	margin-right: auto;
-	margin-bottom:30px;
+	margin-bottom:18px;
 }
 
-div.about_me {
-	background-color: #A3C4BC;
+div.block {
 	border: 1px;
 	border-style: solid;
 	border-color: #413C58;
 	padding: 4px;
 	padding-left: 1em;
 	padding-right: 1em;
-}
-
-ul.classes_taken {
-	background-color: #A3C4BC; 
-	border: 1px; 
-	border-style: solid; 
-	border-color: #413C58; 
-	padding: 2em;
+	margin: 12px;
+	border-radius: 8px;
 }
