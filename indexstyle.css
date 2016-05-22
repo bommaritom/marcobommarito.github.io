@@ -1,0 +1,50 @@
+body {
+	font-family: ArchivoNarrowRegular;
+	font-weight: normal;
+	font-style: normal;
+	background-color:#BFD7B5;
+	margin-left: 14px;
+	margin-right: 14px;
+	min-width: 750px;
+}
+
+h1.title {
+	background-color:#E7EFC5; 
+	border:2px; 
+	border-style:solid; 
+	border-color:#413C58;
+	border-radius:12px;
+	text-align:center;
+	font-size: 50px;
+	font-weight: normal;
+}
+
+img.picture_of_me {
+	width: 160px; 
+	height: 160px; 
+	border: 2px; 
+	border-style: solid; 
+	border-color: black; 
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto;
+	margin-bottom:30px;
+}
+
+div.about_me {
+	background-color: #A3C4BC;
+	border: 1px;
+	border-style: solid;
+	border-color: #413C58;
+	padding: 4px;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+ul.classes_taken {
+	background-color: #A3C4BC; 
+	border: 1px; 
+	border-style: solid; 
+	border-color: #413C58; 
+	padding: 2em;
+}
