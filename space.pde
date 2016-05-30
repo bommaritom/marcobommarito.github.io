@@ -3,7 +3,7 @@ int numPlanets = 500;
 int currentPlanet = 0;
 
 //Gravitational Constant
-float G = 2;
+float G = .03;
 
 void setup(){
   size(500, 500);
@@ -119,7 +119,7 @@ class Planet {
           float dist = sqrt((xDist * xDist) + (yDist * yDist));
           
           //Calculate the force between them
-          float force = ((G * mass * planets[i].mass)/(dist * dist));
+          float force = ((G * mass * planets[i].mass)/(dist));
           xAcc += (force * cos(theta))/mass;
           yAcc += (force * sin(theta))/mass;
           }
