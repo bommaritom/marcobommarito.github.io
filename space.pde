@@ -11,9 +11,7 @@ void setup(){
   cursor(CROSS);
   planets = new Planet[numPlanets];
   for (int i = 0; i < planets.length; i++) {
-    double rand = Math.random() * 6 + 3;
-    float r = (float) rand;
-    planets[i] = new Planet(r, color(0));
+    planets[i] = new Planet(color(0));
   }
 }
 
@@ -31,7 +29,9 @@ void mousePressed() {
     double randY = Math.random() * 5 - 2.5;
     float X = (float) randX;
     float Y = (float) randY;
-    planets[currentPlanet].start(mouseX, mouseY, X, Y);
+    double rand = Math.random() * 6 + 3;
+    float r = (float) rand;
+    planets[currentPlanet].start(mouseX, mouseY, X, Y, r);
     currentPlanet++;
     if (currentPlanet >= numPlanets) {
       currentPlanet = 0;
@@ -57,17 +57,17 @@ class Planet {
   color c;
   boolean on = false;
 
-  Planet (float newRad, color newColor) {
-    rad = newRad;
-    mass = rad * rad;
+  Planet (color newColor) {
     c = newColor;
   }
   
-  void start(float newXPos, float newYPos, float newXVel, float newYVel) {
+  void start(float newXPos, float newYPos, float newXVel, float newYVel, float newRad) {
     xVel = newXVel;
     yVel = newYVel;
     xPos = newXPos;
     yPos = newYPos;
+    rad = newRad;
+    mass = rad * rad;
     on = true;
   }
   
