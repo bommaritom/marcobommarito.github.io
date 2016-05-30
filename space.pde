@@ -86,13 +86,15 @@ class Planet {
           
           //Calculate the angle between them
           if (xDist == 0 && yDist > 0) { 
-            theta = 1.57080;
+            double thta = Math.PI / 2;
+            theta = (float) thta;
           } else if (xDist == 0 && yDist < 0) {
-            theta = 4.71239;
+            double thta = 3 * Math.PI / 2;
+            theta = (float) thta;
           } else if (xDist > 0) {
             theta = atan(yDist/xDist);
-          } else if (xDist < 0) {
-            theta = atan(yDist/xDist) + 3.14159;
+          } else if (xDist < 0) { 
+            theta = atan(yDist/xDist) + (float) Math.PI;
           }
           
           //Calculate the distance between them
