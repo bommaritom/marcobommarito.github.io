@@ -7,7 +7,7 @@ float G = 2;
 
 void setup(){
   size(500, 500);
-  background(255);
+  background(8, 126, 139);
   cursor(CROSS);
   planets = new Planet[numPlanets];
   for (int i = 0; i < planets.length; i++) {
@@ -18,7 +18,7 @@ void setup(){
 }
 
 void draw() {
-  background(255);
+  background(8, 126, 139);
   for (int i = 0; i < numPlanets; i++) {
     planets[i].move();
     planets[i].display();
@@ -37,15 +37,12 @@ void mousePressed() {
       currentPlanet = 0;
     }
   } else if (mouseButton == RIGHT) {
-    background(255);
+    background(8, 126, 139);
     for (int i = 0; i < numPlanets; i++) {
       planets[i].on = false;
     }
   }
 }
-
-
-
 
 class Planet {
   float rad;
