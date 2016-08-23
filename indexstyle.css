@@ -18,7 +18,7 @@ a:visited {
 
 a:hover { 
 	text-decoration: none;
-	color: #30C5FF;
+	color: #000000;
 }
 
 a:active {
@@ -37,7 +37,7 @@ a:active {
 
 h1.title {
 	background-color:#E7EFC5; 
-	border:2px; 
+	border:1px; 
 	border-style:solid; 
 	border-color:#413C58;
 	border-radius:12px;
